@@ -86,8 +86,11 @@ Aggregated data where necessary, such as grouping sales by Product Category or R
 Adding Hierarchies: Created hierarchies for time (Year > Quarter > Month) and for geographic drill-downs to allow users to explore data at different levels of detail.
 Usage
 Once opened in Power BI Desktop:
-
 - **View and Interact**: You can explore each page of the dashboard, use filters, and drill down into specific insights.
 ---
+
+## Technologies Used
+- **Programming Languages**: Python, Dax
+- **Software**: Mysql workbench, Power Bi
 
 This `README.md` file is now ready for use in your GitHub repository. Let me know if you need any further customization!
