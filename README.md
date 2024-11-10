@@ -56,7 +56,7 @@ To use this dashboard, please ensure you have the following:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/sales-insight-data-analysis.git
-**Open the Dashboard**:
+2. **Open the Dashboard**:
 Open the .pbix file in Power BI Desktop.
 Connect Data Sources (if using a custom data source):
 Go to Transform Data > Data Source Settings to update data connections.
@@ -65,28 +65,29 @@ Before visualizing the data in Power BI, the following data cleaning and transfo
 
 ## Data Cleaning:
 
-**Handling Missing Values**: Missing or null values in key columns such as Product ID, Region, and Sales Amount were reviewed. Missing values were either imputed with appropriate means or medians or, where necessary, removed to maintain data integrity.
-**Removing Duplicates**: Duplicate records were identified and removed, particularly in tables like Sales Transactions to avoid over-representation in the data.
-**Standardizing Formats**: Ensured consistent date formats across all date columns, ensuring correct functionality in time-based visualizations. Text columns, such as product names and regions, were also standardized for consistent formatting.
+- **Handling Missing Values**: Missing or null values in key columns such as Product ID, Region, and Sales Amount were reviewed. Missing values were either imputed with appropriate means or medians or, where necessary, removed to maintain data integrity.
+- **Removing Duplicates**: Duplicate records were identified and removed, particularly in tables like Sales Transactions to avoid over-representation in the data.
+- **Standardizing Formats**: Ensured consistent date formats across all date columns, ensuring correct functionality in time-based visualizations. Text columns, such as product names and regions, were also standardized for consistent formatting.
 ## Data Transformation:
 
-**Data Type Conversion**: Correct data types were applied to each column:
+- **Data Type Conversion**: Correct data types were applied to each column:
 Date columns were converted to Date data types.
 Sales Amount and Revenue columns were converted to decimal or currency formats.
-**Creating Calculated Columns**: Calculated columns were added to support analysis:
-**Yearly and Monthly Breakdown**: Added columns for Year, Quarter, and Month to enable flexible time-based analysis.
-**Sales Margin Calculation**: Added a calculated column to measure sales margins based on sales and cost data (if available).
-**Creating Measures**:
+- **Creating Calculated Columns**: Calculated columns were added to support analysis:
+- **Yearly and Monthly Breakdown**: Added columns for Year, Quarter, and Month to enable flexible time-based analysis.
+- **Sales Margin Calculation**: Added a calculated column to measure sales margins based on sales and cost data (if available).
+- **Creating Measures**:
 Defined measures for key performance indicators, such as Total Sales, Average Sales Price, YoY Growth percentages, and Monthly Sales Change, using DAX formulas.
-**Creating Relationships**:
+- **Creating Relationships**:
 Set up relationships between tables, such as linking Sales Transactions to Product Details using Product ID, and to Salespersons using Salesperson ID. Relationships were defined as one-to-many to maintain data consistency and enable accurate filtering in visualizations.
+
 ## Data Aggregation:
 Aggregated data where necessary, such as grouping sales by Product Category or Region for high-level insights.
 Adding Hierarchies: Created hierarchies for time (Year > Quarter > Month) and for geographic drill-downs to allow users to explore data at different levels of detail.
 Usage
 Once opened in Power BI Desktop:
 
-**View and Interact**: You can explore each page of the dashboard, use filters, and drill down into specific insights.
+- **View and Interact**: You can explore each page of the dashboard, use filters, and drill down into specific insights.
 ---
 
 This `README.md` file is now ready for use in your GitHub repository. Let me know if you need any further customization!
